@@ -21,7 +21,19 @@ function p.__main()
     add_bent(11,11,11,"bent_base_ring_green")
     --usually 0.75, tho for debug purposes can be set to 0
     if randf() > 0.75 then
-        set_pos(12,4,8,"block_E1_passage_top")
-        set_pos(12,4,7,"block_E1_passage_bottom")
+        for i = 1,randi(1,5) do
+            local x = randi(9,14)
+            local y = randi(1,6)
+            set_pos(x,y,8,"block_E1_passage_top")
+            set_pos(x,y,7,"block_E1_passage_bottom")
+        end
+    end
+    if randf() > 0.75 then
+        for i = 1,randi(1,5) do
+            local x = randi(1,6)
+            local y = randi(9,14)
+            set_pos(x,y,8,"block_E1_passage_top")
+            set_pos(x,y,7,"block_E1_passage_bottom")
+        end
     end
 end

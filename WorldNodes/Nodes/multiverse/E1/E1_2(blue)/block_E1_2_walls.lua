@@ -4,25 +4,25 @@ function p.__get_tex() return "block_light_blue_border" end
 function p.__main()
     set_default_block("block_E1_2_air")
     --big wall
-    omniverse.wallsauto(0,"block_E1_1_walls","block_E1_2_walls")
+        omniverse.wallsauto(0,"block_E1_1_walls","block_E1_2_walls")
     
     --them beams
-    if get_input_adj_bt(0,0,-1) == "block_E1_2_walls" or get_input_adj_bt(0,0,-1) == "block_E1_1_walls" then
+    if get_input_adj_bt(0,0,-1) == "block_E1_2_walls" or get_input_adj_bt(0,0,-1) == "block_E1_1_walls" or get_input_adj_bt(0,0,-1) == "block_E1_passage_bottom" or get_input_adj_bt(0,0,-1) == "block_E1_mixwalls" then
         create_rect("block_E1_2_walls",7,7,0,7,7,7)
     end
-    if get_input_adj_bt(0,0,1) == "block_E1_2_walls" or get_input_adj_bt(0,0,1) == "block_E1_1_walls" then
+    if get_input_adj_bt(0,0,1) == "block_E1_2_walls" or get_input_adj_bt(0,0,1) == "block_E1_1_walls" or get_input_adj_bt(0,0,1) == "block_E1_passage_bottom" or get_input_adj_bt(0,0,1) == "block_E1_mixwalls" then
         create_rect("block_E1_2_walls",7,7,7,7,7,15)
     end
-    if get_input_adj_bt(0,-1,0) == "block_E1_2_walls" or get_input_adj_bt(0,-1,0) == "block_E1_1_walls" then
+    if get_input_adj_bt(0,-1,0) == "block_E1_2_walls" or get_input_adj_bt(0,-1,0) == "block_E1_1_walls" or get_input_adj_bt(0,-1,0) == "block_E1_passage_bottom" then
         create_rect("block_E1_2_walls",7,0,7,7,7,7)
     end
-    if get_input_adj_bt(0,1,0) == "block_E1_2_walls" or get_input_adj_bt(0,1,0) == "block_E1_1_walls" then
+    if get_input_adj_bt(0,1,0) == "block_E1_2_walls" or get_input_adj_bt(0,1,0) == "block_E1_1_walls" or get_input_adj_bt(0,1,0) == "block_E1_passage_bottom" then
         create_rect("block_E1_2_walls",7,7,7,7,15,7)
     end
-    if get_input_adj_bt(-1,0,0) == "block_E1_2_walls" or get_input_adj_bt(-1,0,0) == "block_E1_1_walls" then
+    if get_input_adj_bt(-1,0,0) == "block_E1_2_walls" or get_input_adj_bt(-1,0,0) == "block_E1_1_walls" or get_input_adj_bt(-1,0,0) == "block_E1_passage_bottom" then
         create_rect("block_E1_2_walls",0,7,7,7,7,7)
     end
-    if get_input_adj_bt(1,0,0) == "block_E1_2_walls" or get_input_adj_bt(1,0,0) == "block_E1_1_walls" then
+    if get_input_adj_bt(1,0,0) == "block_E1_2_walls" or get_input_adj_bt(1,0,0) == "block_E1_1_walls" or get_input_adj_bt(1,0,0) == "block_E1_passage_bottom" then
         create_rect("block_E1_2_walls",7,7,7,15,7,7)
     end
     --rhombus
@@ -70,8 +70,6 @@ function p.octahedron()
         end
         if randf() > 0.75 then
             set_pos(7,7,8,"XAR_MAHOGANY_AMMO")
-        else
-
         end
     end
 end

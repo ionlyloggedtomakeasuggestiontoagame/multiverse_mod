@@ -65,7 +65,7 @@ function randbuilding()
     if (randf() > 1/16) then
         return "block_E1_2_rhombus"
     else
-        local buildings = {"block_Citrine_City_building_waypoint","block_Bismuth_Outside","block_Ruby_Sponge","block_Onyx_Maze_Outside"}
+        local buildings = {"block_Citrine_City_building_waypoint","block_Bismuth_Outside","block_Ruby_Sponge","block_Onyx_Maze_Outside","XAR_BURLINGTON_CITY_BUILDING_ROOM_STORE"}
         local randbuild = buildings[randi(1,#buildings)]
         return randbuild
     end

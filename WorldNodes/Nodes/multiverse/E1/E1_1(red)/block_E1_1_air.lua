@@ -8,6 +8,10 @@ end
 
 function p.__main()
     set_default_block("block_E1_1_air")
+    p.E1_1_air()
+end
+
+function p.E1_1_air()
     
     --beams
     if get_input_adj_bt(0,0,1) == "block_E1_1_air" then

@@ -12,22 +12,22 @@ function p.__main()
     omniverse.wallsauto(0,"block_E1_2_walls","block_E1_1_walls")
     
     --them beams
-    if (get_input_adj_bt(0,0,-1) == "block_E1_1_walls") or (get_input_adj_bt(0,0,-1) == "block_E1_2_walls") or (get_input_adj_bt(0,0,-1) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,0,-1) == "block_abstract_amalgamation") then
+    if (get_input_adj_bt(0,0,-1) == "block_E1_1_walls") or (get_input_adj_bt(0,0,-1) == "block_E1_2_walls") or (get_input_adj_bt(0,0,-1) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,0,-1) == "block_abstract_amalgamation") or (get_input_adj_bt(0,0,-1) == "block_E1_passage_top") or get_input_adj_bt(0,0,-1) == "block_E1_mixwalls" then
         create_rect("block_E1_1_walls",7,7,0,7,7,7)
     end
-    if (get_input_adj_bt(0,0,1) == "block_E1_1_walls") or (get_input_adj_bt(0,0,1) == "block_E1_2_walls") or (get_input_adj_bt(0,0,1) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,0,1) == "block_abstract_amalgamation")then
+    if (get_input_adj_bt(0,0,1) == "block_E1_1_walls") or (get_input_adj_bt(0,0,1) == "block_E1_2_walls") or (get_input_adj_bt(0,0,1) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,0,1) == "block_abstract_amalgamation") or (get_input_adj_bt(0,0,1) == "block_E1_passage_top") or get_input_adj_bt(0,0,1) == "block_E1_mixwalls" then
         create_rect("block_E1_1_walls",7,7,7,7,7,15)
     end
-    if (get_input_adj_bt(0,-1,0) == "block_E1_1_walls") or (get_input_adj_bt(0,-1,0) == "block_E1_2_walls") or (get_input_adj_bt(0,-1,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,-1,0) == "block_abstract_amalgamation") then
+    if (get_input_adj_bt(0,-1,0) == "block_E1_1_walls") or (get_input_adj_bt(0,-1,0) == "block_E1_2_walls") or (get_input_adj_bt(0,-1,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,-1,0) == "block_abstract_amalgamation") or (get_input_adj_bt(0,-1,0) == "block_E1_passage_top") then
         create_rect("block_E1_1_walls",7,0,7,7,7,7)
     end
-    if (get_input_adj_bt(0,1,0) == "block_E1_1_walls") or (get_input_adj_bt(0,1,0) == "block_E1_2_walls") or (get_input_adj_bt(0,1,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,1,0) == "block_abstract_amalgamation")then
+    if (get_input_adj_bt(0,1,0) == "block_E1_1_walls") or (get_input_adj_bt(0,1,0) == "block_E1_2_walls") or (get_input_adj_bt(0,1,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(0,1,0) == "block_abstract_amalgamation") or (get_input_adj_bt(0,1,0) == "block_E1_passage_top") then
         create_rect("block_E1_1_walls",7,7,7,7,15,7)
     end
-    if (get_input_adj_bt(-1,0,0) == "block_E1_1_walls") or (get_input_adj_bt(-1,0,0) == "block_E1_2_walls") or (get_input_adj_bt(-1,0,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(-1,0,0) == "block_abstract_amalgamation") then
+    if (get_input_adj_bt(-1,0,0) == "block_E1_1_walls") or (get_input_adj_bt(-1,0,0) == "block_E1_2_walls") or (get_input_adj_bt(-1,0,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(-1,0,0) == "block_abstract_amalgamation") or (get_input_adj_bt(-1,0,0) == "block_E1_passage_top") then
         create_rect("block_E1_1_walls",0,7,7,7,7,7)
     end
-    if (get_input_adj_bt(1,0,0) == "block_E1_1_walls") or (get_input_adj_bt(1,0,0) == "block_E1_2_walls") or (get_input_adj_bt(1,0,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(1,0,0) == "block_abstract_amalgamation") then
+    if (get_input_adj_bt(1,0,0) == "block_E1_1_walls") or (get_input_adj_bt(1,0,0) == "block_E1_2_walls") or (get_input_adj_bt(1,0,0) == "block_E1_1_walls_transparent") or (get_input_adj_bt(1,0,0) == "block_abstract_amalgamation") or (get_input_adj_bt(1,0,0) == "block_E1_passage_top") then
         create_rect("block_E1_1_walls",7,7,7,15,7,7)
     end
     --structures
@@ -53,5 +53,5 @@ function p.structurething(x1,y1,z1,x2,y2,z2,xc,yc,zc)
 end
 
 function p.__type_init(id)
-ia_block_new_var_b(id, "isabstract", false)
+    ia_block_new_var_b(id, "isabstract", false)
 end

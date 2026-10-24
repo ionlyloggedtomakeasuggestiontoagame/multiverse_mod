@@ -3,6 +3,10 @@ function p.__get_tex() return "" end
 
 function p.__main()
     set_default_block("block_E1_2_air")
+    p.E1_2_air()
+end
+
+function p.E1_2_air()
     local dungeon = {"block_E1_2_rhombus","block_Jade_Maze_Outside","block_Pyrite_Outside"}
     if randf() < 1/2 then
         dungeon[#dungeon+1] = "block_Jade_Maze_Outside"
