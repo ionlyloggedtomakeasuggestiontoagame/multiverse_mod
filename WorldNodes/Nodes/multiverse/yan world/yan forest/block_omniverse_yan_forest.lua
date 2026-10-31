@@ -8,7 +8,7 @@ function p.__main()
     local parent_depth = 0
     local level = get_level()
     if get_input_path_bt(level-1) ~= "block_omniverse_yan_forest_air" then
-        if( get_input_path_block_var_exists(level-1, "depth", "i") ) then
+        if (get_input_path_block_var_exists(level-1, "depth", "i")) then
             parent_depth = get_input_path_block_i(level-1, "depth")
         end
     end

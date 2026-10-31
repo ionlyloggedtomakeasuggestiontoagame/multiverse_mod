@@ -79,6 +79,8 @@ function p.__process_input(wid)
             ga_set_i("xar.player.health.amount", -100)
             ga_play_sound("player_death")
             ga_window_pop_all()
+            ga_set_b("multi.custom.stats.gravity", false)
+            game_movement_gravity.disable()
             --
             --Actually respawning.
             ga_command("respawn force")
@@ -96,6 +98,8 @@ function p.__process_input(wid)
             end
             ga_play_sound("buy")
             ga_window_pop_all()
+            ga_set_b("multi.custom.stats.gravity", false)
+            game_movement_gravity.disable()
             --Actually respawning.
             ga_command("respawn force keepammo")
             return

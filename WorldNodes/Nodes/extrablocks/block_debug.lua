@@ -112,4 +112,5 @@ function p.__main()
     set_pos(11,11,11, "XAR_ESSEX")
     set_pos(1,1,1, "XAR_FOREST_HELL_FLOWER")
     set_pos(7,7,7, "XAR_BRISTOL")
+    --transform.chunk(RotateTransform("z",90))
 end
